@@ -2,6 +2,12 @@ class Enigma:
     def __init__(self, rotors=(1, 2, 3), rotorloc=[1, 1, 1], rotor1=None,
                  rotor2=None, rotor3=None, rotor4=None, rotor5=None,
                  endscrambler=None, charset=None, forcecaps=True):
+        """ Create a new Enigma object.
+
+Note: None means default. Default is not the Enigma default.
+
+Creat a new Enigma object """
+        
         self._setupcharswap(charset, forcecaps)
         
         if endscrambler:
